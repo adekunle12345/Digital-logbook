@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            /* background: #f3f3f3; */
+        }
+
+        .grid {
+            display: grid;
+            place-content: center;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        .login-box {
+            width: 27.3vw;
+            height: 25vw;
+            background: #3d3d3e;
+            padding: 1vw 2vw;
+            margin-top: 20vh;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            border: grey 2px solid;
+            border-top: #500101 4px solid;
+            border-left: #500101 1px solid;
+            border-right: #500101 1px solid;
+            border-bottom: #500101 1px solid;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .login-box input {
+            height: 0.5vw;
+            width: 15vw;
+            padding: 1vw;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .button-login {
+            border: none;
+            width: 15vw;
+            height: 2vw;
+            border-radius: 7px;
+            background-color: #500101;
+            color: white;
+            cursor: pointer;
+            margin-left: 6vw;
+        }
+
+        .button-login:hover {
+            background-color: #500101e6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        
+        <div class="login-box" >
+            <!-- <button onclick="history.back()" style="background-color: rgb(255, 0, 0);  cursor: pointer; float: left; border-radius: 10px; padding: 3px; margin-top:-4vw;margin-left:-2vw; width: 4vw;">Back</button> -->
+            <a href="../index.html"><button style="background-color: rgb(255, 0, 0);  cursor: pointer; float: left; border-radius: 10px; padding: 3px; margin-top:-4vw;margin-left:-2vw; width: 4vw;">Home</button></a>
+            <h1 style="margin-bottom: 20px; text-align: center;">Industry Supervisor Login</h1>
+            <form action="login.php" method="POST">
+                <label>USERNAME</label>
+                <input type="text" name="name"><br>
+                <label>PASSWORD</label>
+                <input type="password" name="pass"><br><br>
+                <button type="submit" class="button-login">LOGIN</button><br><br>
+                <a href="../admin-school/login.html" style="margin-top:2vw; margin-left: 4em; color:white; text-decoration:none;">Login as Institution Supervisor</a><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
